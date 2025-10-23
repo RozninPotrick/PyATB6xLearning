@@ -15,7 +15,7 @@
 
 score = int(input("enter a score: ").strip())
 
-if score >= 100 or score <= 0:
+if score > 100 or score <= 0:
     print("You are a Superman!!, you can't get a grade!!")
 else:
     if score >= 90 and score <= 100:
