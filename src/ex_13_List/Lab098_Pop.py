@@ -41,9 +41,26 @@ print(sum(numbers))
 
 # slicing
 print(numbers)
-print(numbers[1:4])
+print(numbers[1:4]) # from index 1 to 3
 print(numbers[-1])
 
+# In function -> checking what is present in a list
+print("apple" in numbers)
+print(20 in numbers)
+
+# List Creation and comprehension
+# range(1,5) -> list
+l = list(range(1,5))
+print(l)
+
+# Nested list -> add list of list
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(matrix)
+print(matrix[1][2])
+
+# del statement - deletes an element by index or the whole list.
+del numbers[1]
+print(numbers)
 
 
 
