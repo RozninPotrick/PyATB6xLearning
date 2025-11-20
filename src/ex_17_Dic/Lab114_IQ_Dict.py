@@ -1,0 +1,15 @@
+# Remove duplicate values from a dictionary
+from src.ex_17_Dic.Lab106_Dict import my_dict
+
+my_dict = {"a": 1, "b": 2, "c": 1, "d": 3}
+# output = {"a" : 1, "b" : 2, "d" : 3}
+
+unique_value = set()
+result = {}
+
+for key,value in my_dict.items():
+    if value not in unique_value:
+        result[key] = value
+        unique_value.add(value)
+
+print(result)
