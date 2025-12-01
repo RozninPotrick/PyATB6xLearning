@@ -32,7 +32,8 @@ class BaseTest:
     _driver = "Chrome"
 
     def setup(self):
-        print(f"Launching browser:",{self._driver})
+        _driver = "Chrome"
+        print(f"Launching browser:",self._driver)
 
     def teardown(self):
         print("Closing browser")
@@ -47,6 +48,7 @@ class LoginTest(BaseTest):
     def run_test(self):
         load_dotenv()
 
+
         if self.__username == os.getenv("USERNAME"):
             print(f"Running login test with username:" ,self.__username)
         else:
@@ -60,6 +62,7 @@ password = input("Enter password: ")
 ref_object = LoginTest(username, password)
 ref_object.setup()
 ref_object.run_test()
+ref_object.teardown()
 
 
 
