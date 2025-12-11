@@ -1,3 +1,5 @@
+# Method overlading not suppoerted in Python only if
+# you give default value then only is supported.
 class MathClass:
     def add(self,a,b):
         return a+b

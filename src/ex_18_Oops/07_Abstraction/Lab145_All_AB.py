@@ -1,0 +1,25 @@
+# Abstraction
+# Hide the details and show what is required.
+
+# Car -> with -- private,tyre -> public
+# Car -> multiple - Engne, GearBox
+# Car -> driver -> Engine, gearbox?
+
+from abc import ABC,abstractmethod
+
+class Animal(ABC):
+
+    def __init__(self,name):
+        self.name=name
+
+    @abstractmethod
+    def sound(self):
+        pass
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Bark")
+dog = Dog("PP")
+dog.sound()
+
